@@ -7,14 +7,13 @@ import { Pokemon } from '../pokemon';
     <h2 class="center">Add a new pokemon</h2>
     <app-pokemon-form [pokemon]="pokemon"></app-pokemon-form>
   `,
-  styles: [
-  ]
 })
 export class AddPokemonComponent implements OnInit {
 
   pokemon : Pokemon;
 
   ngOnInit(): void {
+    this.pokemon = new Pokemon();
   }
 
 }

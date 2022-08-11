@@ -19,5 +19,5 @@ Step 3:
 
 put your project in production with Firebase
 
-// All this was done thanks to the video :  https://www.youtube.com/watch?v=DTIYVffhJuU (good luck it's a 9 hours video 😜)
+// All this was done thanks to the video :  https://www.youtube.com/watch?v=DTIYVffhJuU (good luck it's a 9 hours video 😜)                
 // https://ngpokemonapp.web.app (admin / admin)

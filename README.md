@@ -11,8 +11,8 @@ install angular/cli :
 
 command to use with angular/cli
 
-ng generate component "name, 
-ng serve --open\n
+ng generate component "name,     
+ng serve --open,     
 ng build
 
 Step 3: 

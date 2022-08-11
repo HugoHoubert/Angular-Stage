@@ -12,13 +12,14 @@ import { EditPokemonComponent } from './edit-pokemon/edit-pokemon.component';
 import { AddPokemonComponent } from './add-pokemon/add-pokemon.component';
 import { SearchPokemonComponent } from './search-pokemon/search-pokemon.component';
 import { LoaderComponent } from './loader/loader.component';
+import { AuthGuard } from '../auth.guard';
 
 const pokemonroutes: Routes = [
 
-  { path: 'edit/pokemon/:id', component: EditPokemonComponent },
-  { path: 'pokemons/add', component: AddPokemonComponent },
-  { path: 'pokemons', component : ListPokemonComponent },
-  { path: "pokemons/:id", component: DetailPokemonComponent },
+  { path: 'edit/pokemon/:id', component: EditPokemonComponent, canActivate: [AuthGuard] },
+  { path: 'pokemons/add', component: AddPokemonComponent, canActivate: [AuthGuard]  },
+  { path: 'pokemons', component : ListPokemonComponent, canActivate: [AuthGuard]  },
+  { path: "pokemons/:id", component: DetailPokemonComponent, canActivate: [AuthGuard]  },
 
 ]; 
 
